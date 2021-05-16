@@ -4,6 +4,8 @@ require 'minitest/pride'
 require_relative '../lib/province'
 require_relative '../lib/data'
 
+
+
 class ProvinceTest < Minitest::Test
   
   
@@ -36,6 +38,14 @@ class ProvinceTest < Minitest::Test
     @asia.demand = -1
     assert_equal(-26,@asia.shortfall)
     assert_equal(-10,@asia.profit)
+  end
+
+  def test_empty_string_demand
+    @asia.demand = ''
+      
+      #test shortfall and profit 
+      assert_equal("",@asia.demand || @asia.total_production)
+
   end
 
 end

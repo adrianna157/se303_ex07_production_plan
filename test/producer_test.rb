@@ -16,8 +16,11 @@ class ProducerTest < Minitest::Test
         @noProducers = Province.new(DATA)
     end
 
-    def test_production_shortfall
+    def test_production_empty_shortfall
         assert_equal(30, @noProducers.shortfall)
+    end
+    def test_production_empty_profit
+        assert_equal(0, @noProducers.profit)
     end
 
 

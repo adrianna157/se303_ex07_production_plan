@@ -41,9 +41,7 @@ class ProvinceTest < Minitest::Test
   end
 
   def test_empty_string_demand
-    @asia.demand = ''
-      
-      #test shortfall and profit 
+      @asia.demand = ''
       assert_equal("",@asia.demand || @asia.total_production)
 
   end

@@ -35,6 +35,7 @@ class ProvinceTest < Minitest::Test
   def test_negative_demand
     @asia.demand = -1
     assert_equal(-26,@asia.shortfall)
+    assert_equal(-10,@asia.profit)
   end
 
 end

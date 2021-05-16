@@ -25,12 +25,6 @@ class ProducerTest < Minitest::Test
         assert_equal(0, @noProducers.profit)
     end
 
-    # def test_string_for_producers
-    #         #@data[:producers] = ""
-    #         assert_equal(true,@data[:producers].kind_of?(String))
-            
-    # end
-
 
 
 end
